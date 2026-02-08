@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Add active class to the new current testimonial
             testimonials[currentTestimonialIndex].classList.add('active');
-        }, 13000); // Change quote every 13 seconds
+        }, 16000); // Change quote every 13 seconds
     }
 });
