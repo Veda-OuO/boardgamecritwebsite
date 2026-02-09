@@ -3,16 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Importance of Blind Playtesting - BGPT Blog</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    
+    <title>The Importance of Blind Playtesting - Greg In Play Blog</title>
+    <meta name="description" content="Learn when your board game is ready for blind playtesting and why this crucial milestone is essential for game design success.">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://greginplay.com/posts/blind-playtesting.html" />
+    <meta name="author" content="Greg Reese">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Importance of Blind Playtesting">
+    <meta property="og:description" content="Learn when your board game is ready for blind playtesting and why this crucial milestone is essential for game design success.">
+    <meta property="og:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    <meta property="og:url" content="https://greginplay.com/posts/blind-playtesting.html">
+    <meta property="og:site_name" content="Greg In Play">
+    <meta property="article:published_time" content="2025-10-14">
+    <meta property="article:author" content="Greg Reese">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Importance of Blind Playtesting">
+    <meta name="twitter:description" content="Learn when your board game is ready for blind playtesting and why this crucial milestone is essential.">
+    <meta name="twitter:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
     <header>
-        <nav>
+        <nav aria-label="Main navigation" role="navigation">
             <div class="logo">
-                <a href="../index.html"><img src="../images/greg-in-play-logo.png" alt="Greg In Play" /></a>
+                <a href="../index.html" aria-label="Greg In Play homepage"><img src="../images/greg-in-play-logo.png" alt="Greg In Play logo" width="200" height="200" loading="eager" /></a>
             </div>
-            <ul>
+            <ul role="list">
                 <li><a href="../services.html">Services</a></li>
                 <li><a href="../blog.html">Blog</a></li>
                 <li><a href="../faq.html">FAQ</a></li>
@@ -23,7 +76,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section id="blog-post-full">
             <article class="blog-post">
                 <h1>The Importance of Blind Playtesting</h1>
@@ -46,7 +99,7 @@
   <p>However, over time, and as you receive and parse feedback, your game will slowly grow to the point where it will have the strength to stand on its own legs. This is the hallmark of a blind playtest, and its primary source of power: the sudden and complete absence of designer influence in the playtesting process.</p>
 
 
-  <img src="../images/bikehands.png" alt="Only when the parent lets go can the child truly grow." class="blog-post-image">
+  <img src="../images/bikehands.png" alt="Only when the parent lets go can the child truly grow." class="blog-post-image" loading="lazy">
 
   <p><strong>What a scary moment!</strong></p>
 
@@ -76,7 +129,7 @@
 
   <p>If your sessions exhibit most of these criteria, I would say that it’s time to take the leap.</p>
 
-  <img src="../images/IMG_4121.JPG" alt="Board game playtesting session with analysis notes" class="blog-post-image">
+  <img src="../images/IMG_4121.JPG" alt="Board game playtesting session with analysis notes" class="blog-post-image" loading="lazy">
 
 
   <p>Your first blind playtest might fizzle—maybe even in the first round. In fact, I have tested many games where I could not complete a single turn. And you know what? <i>That’s totally fine.</i></p>
@@ -95,7 +148,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Board Game Playtesting Services. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year">2026</span> Greg In Play Playtesting Services. All rights reserved.</p>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

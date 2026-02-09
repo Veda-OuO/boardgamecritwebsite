@@ -3,34 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Board Game Playtesting Services</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    
+    <title>Services - Greg In Play Playtesting</title>
+    <meta name="description" content="Professional playtesting packages for board and video games. Choose from blind playtests, guided sessions, or comprehensive testing packages.">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://greginplay.com/services.html" />
+    <meta name="author" content="Greg Reese">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Playtesting Services - Greg In Play">
+    <meta property="og:description" content="Professional playtesting packages for board and video games. Choose from blind playtests, guided sessions, or comprehensive testing packages.">
+    <meta property="og:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    <meta property="og:url" content="https://greginplay.com/services.html">
+    <meta property="og:site_name" content="Greg In Play">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Playtesting Services - Greg In Play">
+    <meta name="twitter:description" content="Professional playtesting packages for board and video games. Choose from blind playtests, guided sessions, or comprehensive testing packages.">
+    <meta name="twitter:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="canonical" href="https://www.yourdomain.com/current-page.html" />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
     <header>
-        <nav>
+        <nav aria-label="Main navigation" role="navigation">
             <div class="logo">
-                <a href="index.html"><img src="images/greg-in-play-logo.png" alt="Greg In Play" /></a>
+                <a href="index.html" aria-label="Greg In Play homepage"><img src="images/greg-in-play-logo.png" alt="Greg In Play logo" width="200" height="200" loading="eager" /></a>
             </div>
-            <ul>
+            <ul role="list">
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section id="packages">
             <h2>Playtesting Packages</h2>
             <div class="package-cards">
                 <div class="package-card" data-package="blind-playtest">
                     <h3>Boardgame Blind Playtest Package</h3>
-                    <p class="price">(Best Option For Most Games)</p>
+                    <p class="price">(Best Option For Most Board Games)</p>
                     <ul>
                         <li>One hour blind playtest video</li>
                         <li>Full, blind reading of rulebook</li>
@@ -41,6 +91,7 @@
                 </div>
                 <div class="package-card" data-package="comprehensive">
                     <h3>Guided Playtest Package</h3>
+                    <br>
                     <p class="price">(Best For Games That Aren't Quite Ready)</p>
                     <ul>
                         <li>Two hour session where I join you while you lead the playtest</li>
@@ -52,7 +103,7 @@
                 </div>
                 <div class="package-card" data-package="premium">
                     <h3>Video Game Blind Playtest Package</h3>
-                    <!-- <p class="price">Contact for Quote</p> -->
+                    <p class="price">(Best For Option For Most Video Games)</p>
                     <ul>
                         <li>One hour blind playtest video</li>
                         <li>Ability to direct my focus to specific gameplay elements (let me know before testing)</li>
@@ -64,19 +115,20 @@
             </div>
             <p class="payment-note">
                 After payment, you'll receive an email confirming your booking and asking for the files necessary to playtest your game.
-                <a href="refund-policy.html">Refund Policy</a> | <a href="https://paypal.me/YourHandle" class="paypal-link" target="_blank" rel="noopener">Prefer PayPal?</a>
+                <a href="refund-policy.html">Refund Policy</a>
             </p>
         </section>
         <section id="additionalinfo">
             <div class="info-content">
-                <p>Payment is typically handled via Stripe or PayPal. Once your payment is processed, you'll receive detailed instructions on how to proceed.</p>
-                <p>If you're unsure which package is right for your game, or if you want to customize a package, feel free to reach out via <a href="mailto:your.email@example.com">email</a>.</p>
+                <p>Payment is handled via Stripe. Once your payment is processed, you'll receive detailed instructions on how to proceed.</p>
+                <p>If you're unsure which package is right for your game, or if you want to customize a package, feel free to reach out via <a href="mailto:greginplaystudios@gmail.com">email</a>.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Board Game Playtesting Services. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year">2026</span> Greg In Play Playtesting Services. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

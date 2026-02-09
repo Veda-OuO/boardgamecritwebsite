@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/* Accessibility - Skip to main content link */
+.skip-to-main {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1rem;
+    background-color: #4a9eff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-to-main:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
+
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif;
@@ -13,6 +31,14 @@ body {
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 700; /* Use a bolder weight for headings */
+}
+
+h1 {
+    color: #ffaa00; /* Gold color for main page titles */
+}
+
+h2 {
+    color: #4a9eff; /* Blue color for section headings */
 }
 
 a {
@@ -115,6 +141,7 @@ h2 {
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    color: white;
     /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000; */
 }
 
@@ -263,8 +290,11 @@ h2 {
 
 .profile-photo {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+    aspect-ratio: auto;
 }
 
 /* Make it responsive for mobile - this section can stay as is 

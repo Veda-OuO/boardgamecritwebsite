@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Testimonial rotation
     const testimonials = document.querySelectorAll('.testimonial-card');
     let currentTestimonialIndex = 0;
 
@@ -15,6 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Add active class to the new current testimonial
             testimonials[currentTestimonialIndex].classList.add('active');
-        }, 16000); // Change quote every 13 seconds
+        }, 16000); // Change quote every 16 seconds
+    }
+
+    // Automatically update copyright year
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = new Date().getFullYear();
     }
 });

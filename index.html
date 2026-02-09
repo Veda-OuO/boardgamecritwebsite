@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    
     <title>Greg In Play - Expert Playtesting Services</title>
-    <meta name="description" content="Professional board game playtesting services to help designers refine mechanics, balance gameplay, and improve player experience.">
+    <meta name="description" content="Professional playtesting services for board and video game designers to help refine mechanics, balance gameplay, and improve player experience.">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://greginplay.com/" />
+    <meta name="author" content="Greg Reese">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Greg In Play - Expert Board and Video Game Playtesting Services">
+    <meta property="og:description" content="Professional playtesting services for board and video game designers to help refine mechanics, balance gameplay, and improve player experience.">
+    <meta property="og:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    <meta property="og:url" content="https://greginplay.com/">
+    <meta property="og:site_name" content="Greg In Play">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greg In Play - Expert Playtesting Services">
+    <meta name="twitter:description" content="Professional playtesting services for board and video game designers to help refine mechanics, balance gameplay, and improve player experience.">
+    <meta name="twitter:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="canonical" href="https://www.yourdomain.com/current-page.html" />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
     <header>
-        <nav>
+        <nav aria-label="Main navigation" role="navigation">
             <div class="logo">
-                <a href="index.html"><img src="images/greg-in-play-logo.png" alt="Greg In Play" /></a>
+                <a href="index.html" aria-label="Greg In Play homepage"><img src="images/greg-in-play-logo.png" alt="Greg In Play logo" width="200" height="200" loading="eager" /></a>
             </div>
-            <ul>
+            <ul role="list">
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -24,7 +74,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section id="hero">
             <div class="hero-content">
                 <h1>Expert Playtesting Services</h1>
@@ -33,9 +83,9 @@
             </div>
         </section>
 
-        <section id="testimonials">
+        <section id="testimonials" aria-label="Client testimonials">
        
-            <div class="testimonial-container">
+            <div class="testimonial-container" role="region" aria-live="polite">
                 <div class="testimonial-card active">
                     <p>"I think Greg is my new favorite person. Just days after reaching out to him, he sent me a video of a full blind playtest session with my game. He was patient, attentive, insightful, and encouraging. I really can't thank him enough and would encourage any aspiring designer to take advantage of this opportunity!."</p>
                 </div>
@@ -85,7 +135,7 @@
        <h2>About Me</h2>
     <div class="about-container">
         <div class="about-image">
-            <img src="images/IMG_4183-edited.jpg" alt="Greg Reese, Board Game Playtesting Expert" class="profile-photo">
+            <img src="images/websiteselfie1.jpg" alt="Greg Reese, Board Game Playtesting Expert" class="profile-photo" loading="lazy">
         </div>
         <div class="about-text">
             <p>I'm an avid gamer with strong opinions and a deep desire to help others. In my own journey as a designer, I've spent more time than I'd care to admit nose-deep in rulebooks and participating in playtests with a wide range of communities. <br> <br> Using my experience, a sharp eye for detail, and insatiable curiosity, I will explore the ins and outs of your game with the goal of empowering you with the new perspective necessary to take it to the next level. <br> <br>
@@ -100,13 +150,13 @@
         <section id="contact">
             <h2>Have A Question?</h2>
             <p>If you have any questions or need further information about my playtesting services, feel free to reach out! I'm happy to help in any way I can.</p>
-            <a href="mailto:gregwreese@gmail.com" class="cta-button">Email Me</a>
+            <a href="mailto:greginplaystudios@gmail.com" class="cta-button">Email Me</a>
             <a href="faq.html" class="cta-button">FAQ</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Board Game Playtesting Services. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year">2026</span> Greg In Play Playtesting Services. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
     <script type="application/ld+json">
@@ -114,20 +164,20 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Board and Video Game Playtesting",
-  "url": "https://YOURDOMAIN/",
-  "image": "https://YOURDOMAIN/images/IMG_E4139.JPG",
-  "description": "Professional board and video game playtesting and feedback services",
+  "url": "https://greginplay.com/",
+  "image": "https://greginplay.com/images/greg-in-play-logo.png",
+  "description": "Professional playtesting services for board and video game designers, offering detailed feedback and insights to help refine game mechanics, balance gameplay, and enhance player experience.",
   "provider": {
     "@type": "Person",
     "name": "Greg Reese",
-    "url": "https://YOURDOMAIN/"
+    "url": "https://greginplay.com/"
   },
   "serviceType": "Game Design Consultation",
   "areaServed": "Worldwide",
   "offers": {
     "@type": "AggregateOffer",
     "lowPrice": "40",
-    "highPrice": "50",
+    "highPrice": "60",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }

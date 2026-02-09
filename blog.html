@@ -3,28 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Board Game Playtesting Services</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    
+    <title>Blog - Greg In Play</title>
+    <meta name="description" content="Insights and advice on board game playtesting, game design, and the creative process from professional playtester Greg Reese.">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://greginplay.com/blog.html" />
+    <meta name="author" content="Greg Reese">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog - Greg In Play">
+    <meta property="og:description" content="Insights and advice on board game playtesting, game design, and the creative process from professional playtester Greg Reese.">
+    <meta property="og:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    <meta property="og:url" content="https://greginplay.com/blog.html">
+    <meta property="og:site_name" content="Greg In Play">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Greg In Play">
+    <meta name="twitter:description" content="Insights and advice on board game playtesting, game design, and the creative process.">
+    <meta name="twitter:image" content="https://greginplay.com/images/greg-in-play-logo.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="canonical" href="https://www.yourdomain.com/current-page.html" />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
     <header>
-        <nav>
+        <nav aria-label="Main navigation" role="navigation">
             <div class="logo">
-                <a href="index.html"><img src="images/greg-in-play-logo.png" alt="Greg In Play" /></a>
+                <a href="index.html" aria-label="Greg In Play homepage"><img src="images/greg-in-play-logo.png" alt="Greg In Play logo" width="200" height="200" loading="eager" /></a>
             </div>
-            <ul>
+            <ul role="list">
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <section id="blog-posts">
             <h2>Latest Posts</h2>
             <div class="blog-list">
@@ -41,7 +91,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Board Game Playtesting Services. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year">2026</span> Greg In Play Playtesting Services. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
