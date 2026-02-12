@@ -710,3 +710,48 @@ footer {
         min-width: 120px;
     }
 }
+
+/* Specific fix for iPhone SE and similar small screens (375x667) */
+@media (max-width: 375px) {
+    /* Add more spacing between hero and testimonials to prevent overlap */
+    .testimonial-container {
+        margin-top: 3rem;
+        min-height: 200px;
+    }
+    
+    /* Ensure testimonial cards don't overflow */
+    .testimonial-card {
+        width: 90%;
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 1rem;
+    }
+    
+    /* Adjust hero section padding for smaller screens */
+    #hero {
+        padding: 3rem 1rem;
+    }
+    
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    #hero p {
+        font-size: 1rem;
+    }
+    
+    /* Ensure nav links don't overflow */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.95rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
