@@ -45,6 +45,176 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        header {
+            overflow: hidden;
+        }
+
+        /* Restrict hover hit area to the anchor layout box only */
+        .nav-image-base,
+        .nav-image-overlay {
+            pointer-events: none;
+        }
+
+        .nav-image-link .nav-image-base {
+            opacity: 0.7;
+        }
+
+        .nav-image-link.nav-image-blog .nav-image-base {
+            transform: translate(-7px, 16%) scale(1.5);
+            transform-origin: center;
+        }
+
+        .nav-image-link:not(.nav-image-blog) .nav-image-base {
+            transform: translate(-7px, 16%) scale(1.17);
+            transform-origin: center;
+        }
+
+        .nav-image-link.nav-image-services .nav-image-base {
+            transform: translate(-7px, 0%) scale(1.8);
+        }
+
+        .nav-image-link.nav-image-reviews .nav-image-base {
+            transform: translate(-7px, 7%) scale(1.7);
+        }
+
+        .nav-image-link.nav-image-about .nav-image-base {
+            transform: translate(-7px, 2%) scale(1.3);
+        }
+
+        .nav-image-link .nav-image-overlay {
+            transform: translate(-7px, -2px) scale(0.984);
+            transform-origin: center;
+        }
+
+        .nav-image-link.nav-image-blog:hover .nav-image-base {
+            transform: translate(-11px, 12%) scale(1.26) rotate(-2deg);
+        }
+
+        .nav-image-link.nav-image-services:hover .nav-image-base {
+            transform: translate(-11px, -4%) scale(1.8) rotate(-2deg);
+        }
+
+        .nav-image-link.nav-image-reviews:hover .nav-image-base {
+            transform: translate(-11px, 3%) scale(1.7) rotate(-2deg);
+        }
+
+        .nav-image-link.nav-image-about:hover .nav-image-base {
+            transform: translate(-11px, -2%) scale(1.3) rotate(-2deg);
+        }
+
+        .nav-image-link.nav-image-contact .nav-image-base {
+            transform: translate(-7px, 16%) scale(1.17);
+        }
+
+        .nav-image-link.nav-image-contact:hover .nav-image-base {
+            transform: translate(-11px, 12%) scale(1.17) rotate(-2deg);
+        }
+
+        .nav-image-link:not(.nav-image-blog):not(.nav-image-services):not(.nav-image-reviews):not(.nav-image-about):not(.nav-image-contact):hover .nav-image-base {
+            transform: translate(-11px, 12%) scale(1.17) rotate(-2deg);
+        }
+
+        .nav-image-link:hover .nav-image-overlay {
+            transform: translate(-3px, -2px) scale(0.984) rotate(2deg);
+        }
+
+        /* --- Responsive: 820px and 853px (tablets) --- */
+        @media (max-width: 870px) {
+            nav ul {
+                gap: 0.6rem;
+            }
+            .nav-image-stack {
+                width: 70px;
+                height: 28px;
+            }
+            .nav-image-link.nav-image-blog .nav-image-base {
+                transform: translate(-4px, 16%) scale(1.0);
+            }
+            .nav-image-link.nav-image-services .nav-image-base {
+                transform: translate(-4px, 0%) scale(1.3);
+            }
+            .nav-image-link.nav-image-reviews .nav-image-base {
+                transform: translate(-4px, 7%) scale(1.2);
+            }
+            .nav-image-link.nav-image-about .nav-image-base {
+                transform: translate(-4px, 2%) scale(1.0);
+            }
+            .nav-image-link.nav-image-contact .nav-image-base {
+                transform: translate(-4px, 16%) scale(1.0);
+            }
+            .nav-image-link:not(.nav-image-blog):not(.nav-image-services):not(.nav-image-reviews):not(.nav-image-about):not(.nav-image-contact) .nav-image-base {
+                transform: translate(-4px, 16%) scale(1.0);
+            }
+            .nav-image-link .nav-image-overlay {
+                transform: translate(-4px, -2px) scale(0.82);
+            }
+            .nav-image-link.nav-image-contact:hover .nav-image-base {
+                transform: translate(-8px, 12%) scale(1.0) rotate(-2deg);
+            }
+            .nav-image-link.nav-image-contact:hover .nav-image-overlay {
+                transform: translate(0px, -2px) scale(0.82) rotate(2deg);
+            }
+        }
+
+        /* --- Responsive: 540px (small tablets / large phones) --- */
+        @media (max-width: 560px) {
+            nav {
+                gap: 0.5rem;
+            }
+            nav ul {
+                gap: 0.3rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .nav-image-stack {
+                width: 54px;
+                height: 22px;
+            }
+            .nav-image-link.nav-image-blog .nav-image-base,
+            .nav-image-link.nav-image-services .nav-image-base,
+            .nav-image-link.nav-image-reviews .nav-image-base,
+            .nav-image-link.nav-image-about .nav-image-base,
+            .nav-image-link.nav-image-contact .nav-image-base,
+            .nav-image-link:not(.nav-image-blog):not(.nav-image-services):not(.nav-image-reviews):not(.nav-image-about):not(.nav-image-contact) .nav-image-base {
+                transform: translate(-2px, 8%) scale(0.85);
+            }
+            .nav-image-link .nav-image-overlay {
+                transform: translate(-2px, -2px) scale(0.7);
+            }
+            .nav-image-link.nav-image-contact:hover .nav-image-base {
+                transform: translate(-5px, 5%) scale(0.85) rotate(-2deg);
+            }
+            .nav-image-link.nav-image-contact:hover .nav-image-overlay {
+                transform: translate(1px, -2px) scale(0.7) rotate(2deg);
+            }
+        }
+
+        /* --- Responsive: iPhone (375px–430px) --- */
+        @media (max-width: 430px) {
+            .nav-image-stack {
+                width: 60px;
+                height: 24px;
+            }
+            .nav-image-link.nav-image-blog .nav-image-base,
+            .nav-image-link.nav-image-services .nav-image-base,
+            .nav-image-link.nav-image-reviews .nav-image-base,
+            .nav-image-link.nav-image-about .nav-image-base,
+            .nav-image-link.nav-image-contact .nav-image-base,
+            .nav-image-link:not(.nav-image-blog):not(.nav-image-services):not(.nav-image-reviews):not(.nav-image-about):not(.nav-image-contact) .nav-image-base {
+                transform: translate(-2px, 8%) scale(0.98);
+            }
+            .nav-image-link .nav-image-overlay {
+                transform: translate(-2px, -2px) scale(0.82);
+            }
+            .nav-image-link.nav-image-contact:hover .nav-image-base {
+                transform: translate(-5px, 5%) scale(0.98) rotate(-2deg);
+            }
+            .nav-image-link.nav-image-contact:hover .nav-image-overlay {
+                transform: translate(1px, -2px) scale(0.82) rotate(2deg);
+            }
+        }
+    </style>
     
     <!-- Google Analytics - Only loaded if cookies are accepted -->
     <script id="google-analytics-script">
@@ -62,12 +232,54 @@
                 <a href="../index.html" aria-label="Greg In Play homepage"><img src="../images/greg-in-play-logo.png" alt="Greg In Play logo" width="200" height="200" loading="eager" /></a>
             </div>
             <ul role="list">
-                <li><a href="../services.html">Services</a></li>
-                <li><a href="../blog.html">Blog</a></li>
-                <li><a href="../faq.html">FAQ</a></li>
-                <li><a href="../reviews.html">Reviews</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li>
+                    <a href="../services.html" class="nav-image-link nav-image-services" aria-label="Services">
+                        <span class="nav-image-stack" aria-hidden="true">
+                            <img src="../images/img-services.png" alt="" class="nav-image-base" loading="lazy">
+                            <img src="../images/np-services2.png" alt="" class="nav-image-overlay" loading="lazy">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../blog.html" class="nav-image-link nav-image-blog" aria-label="Blog">
+                        <span class="nav-image-stack" aria-hidden="true">
+                            <img src="../images/img-blog.png" alt="" class="nav-image-base" loading="lazy">
+                            <img src="../images/np-blog2.png" alt="" class="nav-image-overlay" loading="lazy">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../faq.html" class="nav-image-link" aria-label="FAQ">
+                        <span class="nav-image-stack" aria-hidden="true">
+                            <img src="../images/img-FAQ.png" alt="" class="nav-image-base" loading="lazy">
+                            <img src="../images/np-FAQ2.png" alt="" class="nav-image-overlay" loading="lazy">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../reviews.html" class="nav-image-link nav-image-reviews" aria-label="Reviews">
+                        <span class="nav-image-stack" aria-hidden="true">
+                            <img src="../images/img-reviews.png" alt="" class="nav-image-base" loading="lazy">
+                            <img src="../images/np-reviews2.png" alt="" class="nav-image-overlay" loading="lazy">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#about" class="nav-image-link nav-image-about" aria-label="About">
+                        <span class="nav-image-stack" aria-hidden="true">
+                            <img src="../images/img-about.png" alt="" class="nav-image-base" loading="lazy">
+                            <img src="../images/np-about2.png" alt="" class="nav-image-overlay" loading="lazy">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#contact" class="nav-image-link nav-image-contact" aria-label="Contact">
+                        <span class="nav-image-stack" aria-hidden="true">
+                            <img src="../images/img-contact.png" alt="" class="nav-image-base" loading="lazy">
+                            <img src="../images/np-contact2.png" alt="" class="nav-image-overlay" loading="lazy">
+                        </span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>

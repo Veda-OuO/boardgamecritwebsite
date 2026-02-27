@@ -104,6 +104,60 @@ nav ul li a {
     font-weight: 500;
 }
 
+.nav-image-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-image-stack {
+    position: relative;
+    display: inline-block;
+    width: 96px;
+    height: 32px;
+    overflow: visible;
+}
+
+.nav-image-base,
+.nav-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-image-overlay {
+    z-index: 1;
+    transform: translate(-7px, -2px) scale(0.82);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-image-base {
+    z-index: 0;
+    transform: translate(-7px, 16%) scale(1.8);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-image-link:hover .nav-image-base {
+    transform: translate(-11px, 20%) scale(1.88) rotate(-3deg);
+}
+
+.nav-image-link:hover .nav-image-overlay {
+    transform: translate(-3px, -8px) scale(0.86) rotate(3deg);
+}
+
+.nav-image-link:active .nav-image-base {
+    transform: translate(-5px, 26%) scale(1.72) rotate(2deg);
+}
+
+.nav-image-link:active .nav-image-overlay {
+    transform: translate(-9px, 0) scale(0.78) rotate(-2deg);
+}
+
 /* Main Content */
 main {
     width: 90%;
@@ -346,6 +400,11 @@ footer {
 
     nav ul li a {
         font-size: 1rem;
+    }
+
+    .nav-image-stack {
+        width: 86px;
+        height: 28px;
     }
 
     #hero h1 {
@@ -726,6 +785,11 @@ footer {
         font-size: 0.9rem;
         padding: 0.4rem 0.7rem;
     }
+
+    .nav-image-stack {
+        width: 78px;
+        height: 24px;
+    }
     
     /* Add more spacing between hero and testimonials to prevent overlap */
     .testimonial-container {
@@ -773,6 +837,11 @@ footer {
     nav ul li a {
         font-size: 0.85rem;
         padding: 0.3rem 0.5rem;
+    }
+
+    .nav-image-stack {
+        width: 72px;
+        height: 22px;
     }
     
     .testimonial-container {
