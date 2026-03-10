@@ -504,15 +504,64 @@ footer {
 /* Blog List on blog.html */
 .blog-list .blog-entry {
     background: #2a2a2a;
-    padding: 2rem;
+    padding: 0;
     border-radius: 8px;
     margin-bottom: 2rem;
     border: 1px solid #444;
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.blog-list .blog-entry .blog-thumbnail {
+    flex-shrink: 0;
+    width: 250px;
+    overflow: hidden;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.blog-list .blog-entry .blog-thumbnail:hover {
+    opacity: 0.8;
+}
+
+.blog-list .blog-entry .blog-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-list .blog-entry .blog-content {
+    flex: 1;
+    padding: 2rem;
 }
 
 .blog-list .blog-entry h3 {
     margin-top: 0;
     color: #4a9eff;
+}
+
+.blog-list .blog-entry h3 a {
+    color: #4a9eff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-list .blog-entry h3 a:hover {
+    color: #66b3ff;
+}
+
+/* Responsive blog entries for mobile */
+@media (max-width: 600px) {
+    .blog-list .blog-entry {
+        flex-direction: column;
+    }
+    
+    .blog-list .blog-entry .blog-thumbnail {
+        width: 100%;
+        height: 200px;
+    }
 }
 
 /* Single Blog Post Page */
